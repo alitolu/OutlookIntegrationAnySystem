@@ -1,39 +1,69 @@
-Reference Search Application
-A Python application for detecting and analyzing Reference Numbers information in emails and documents.
-Project Overview
-This application provides automated detection of  tracking numbers from emails (primarily Outlook), with AI-assisted analysis capabilities. It helps logistics professionals and shipping coordinators efficiently track shipments by scanning communications for relevant tracking information.
-Architecture
-The application follows an MVC architecture:
-�	Views: User interface components including the main window and utility dialogs
-�	Controllers & Models: Core business logic and data structures
-�	Utilities: Specialized components for detection, analysis, and integration
-Key Features
-�	Email scanning through Outlook integration
-�	Configurable  pattern detection
-�	AI-powered content analysis
-�	Excel import/export capabilities
-�	Attachment processing
-�	Search result caching
-Components
-UI Layer
-�	main_window.py: Main application interface
-�	data_source_editor.py: Configure email sources
-�	pattern_manager.py: Manage  detection patterns
-�	widgets.py: Reusable UI components
-�	progress.py: Detailed progress reporting
-Core
-�	search_controller.py: Coordinates search operations
-�	mail_model.py: Mail data representation
-Utilities
-�	_detector.py:  pattern recognition
-�	cache_manager.py: Search result caching
-�	config_manager.py: Application settings
-�	excel_helper.py: Excel file operations
-�	mail_analyzer.py: Email content analysis
-�	outlook_helper.py: Microsoft Outlook integration
-�	ai_analyzer.py: AI-assisted content analysis
-�	attachment_processor.py: Email attachment handling
-Configuration
-The application uses JSON files for configuration:
-�	settings.json: Application settings
-�	_patterns.json: Configurable  detection patterns
+Referans Arama Uygulaması
+E-posta ve dokümanlarda Referans Numaralarını tespit ederek kullanmış olduğunuz ERP veya benzeri uygulamarınızda son durumlarını tespit eder.
+
+Proje Genel Bakış
+Bu uygulama, e-postalardaki (öncelikle Outlook) takip numaralarının otomatik tespitini yapıp, yapay zeka destekli analiz yetenekleri sunar. Lojistik profesyonelleri ve kargo koordinatörleri için iletişim kaynaklarını tarayarak ilgili takip bilgilerini verimli bir şekilde bulmalarını sağlar.
+
+Mimari
+Uygulama MVC (Model-View-Controller) mimarisi kullanır:
+
+Görünümler (Views): Ana pencere ve yardımcı iletişim kutuları dahil kullanıcı arayüzü bileşenleri
+Kontrolörler ve Modeller: Temel iş mantığı ve veri yapıları
+Yardımcı Araçlar: Tespit, analiz ve entegrasyon için özelleştirilmiş bileşenler
+
+Temel Özellikler
+✉️ Outlook entegrasyonu ile e-posta tarama
+🔍 Yapılandırılabilir desen tespiti
+🧠 Yapay zeka destekli içerik analizi
+📊 Excel içe/dışa aktarma özellikleri
+📎 Ek dosya işleme
+💾 Arama sonuçlarını önbellekleme
+
+Bileşenler
+Kullanıcı Arayüzü Katmanı
+main_window.py: Ana uygulama arayüzü
+data_source_editor.py: E-posta kaynaklarını yapılandırma
+pattern_manager.py: Tespit desenlerini yönetme
+widgets.py: Yeniden kullanılabilir arayüz bileşenleri
+progress.py: Detaylı ilerleme raporlama
+Çekirdek
+search_controller.py: Arama işlemlerini koordine eder
+mail_model.py: E-posta veri gösterimi
+Yardımcı Araçlar
+_detector.py: Desen tanıma
+cache_manager.py: Arama sonuçları önbelleği
+config_manager.py: Uygulama ayarları
+excel_helper.py: Excel dosya işlemleri
+mail_analyzer.py: E-posta içerik analizi
+outlook_helper.py: Microsoft Outlook entegrasyonu
+ai_analyzer.py: Yapay zeka destekli içerik analizi
+attachment_processor.py: E-posta eklerini işleme
+Yapılandırma
+Uygulama yapılandırma için JSON dosyaları kullanır:
+
+settings.json: Uygulama ayarları
+_patterns.json: Yapılandırılabilir tespit desenleri
+
+
+Kullanım
+Gereksinimler
+Python 3.8 veya üzeri
+Microsoft Outlook (e-posta entegrasyonu için)
+Gerekli Python paketleri requirements.txt dosyasında listelenmiştir
+Özellik Kullanım Örnekleri
+E-posta Tarama
+Ana ekrandan bir referans numarası girin ve "Ara" düğmesine tıklayın. Uygulama, Outlook'tan son 15 günlük e-postaları tarayacak ve ilgili referansları bulacaktır.
+
+Desen Yönetimi
+"Ayarlar > Desen Yöneticisi" bölümünden özel referans numarası desenlerinizi ekleyebilir veya düzenleyebilirsiniz.
+
+Excel İşlemleri
+"Dosya > Verileri Dışa Aktar" seçeneği ile arama sonuçlarını Excel'e aktarabilirsiniz.
+
+Sorun Giderme
+Outlook Bağlantı Hatası: Outlook'un açık olduğundan ve doğru profille oturum açtığınızdan emin olun.
+OCR Hatası: Tesseract OCR'nin doğru kurulduğunu kontrol edin.
+Önbellek Sorunları: "cache/" klasörünü temizleyerek yeniden başlatın.
+
+Lisans
+MIT Lisansı
