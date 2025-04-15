@@ -1,0 +1,259 @@
+{
+    "patterns": {
+        "DHL": {
+            "airline": "DHL",
+            "prefix": "",
+            "length": 10,
+            "prefix_length": 0,
+            "format_examples": [
+                "DHL EXPRESS AWB 1234567890",
+                "1234567890"
+            ],
+            "separator_allowed": true,
+            "min_confidence": 0.7,
+            "enabled": true,
+            "patterns": [
+                "DHL EXPRESS AWB[-\\s]*([0-9]{10})",
+                "[-\\s]*([0-9]{10})"
+            ]
+        },
+        "THY": {
+            "airline": "THY",
+            "prefix": "235",
+            "length": 11,
+            "prefix_length": 3,
+            "format_examples": [
+                "235-12345678"
+            ],
+            "separator_allowed": true,
+            "min_confidence": 0.7,
+            "enabled": true,
+            "patterns": [
+                "235[-\\s]*(\\d{8})",
+                "235[-\\s]*(\\d{8})/([0-9A-Za-z]+)",
+                "235[-\\s]*(\\d{4}\\s?\\d{4}|\\d{8})"
+            ]
+        },
+        "HAVAŞ": {
+            "airline": "HAVAŞ",
+            "prefix": "624",
+            "length": 11,
+            "prefix_length": 3,
+            "format_examples": [
+                "624-12345678"
+            ],
+            "separator_allowed": true,
+            "min_confidence": 0.7,
+            "enabled": true,
+            "patterns": [
+                "624[-\\s]*(\\d{8})",
+                "624[-\\s]*(\\d{8})/([0-9A-Za-z]+)",
+                "624[-\\s]*(\\d{4}\\s?\\d{4}|\\d{8})"
+            ]
+        },
+        "LUFTHANSA": {
+            "airline": "LUFTHANSA",
+            "prefix": "020",
+            "length": 11,
+            "prefix_length": 3,
+            "format_examples": [
+                "020-12345678"
+            ],
+            "separator_allowed": true,
+            "min_confidence": 0.7,
+            "enabled": true,
+            "patterns": [
+                "020[-\\s]*(\\d{8})",
+                "020[-\\s]*(\\d{8})/([0-9A-Za-z]+)",
+                "020[-\\s]*(\\d{4}\\s?\\d{4}|\\d{8})"
+            ]
+        },
+        "EMIRATES": {
+            "airline": "EMIRATES",
+            "prefix": "716",
+            "length": 11,
+            "prefix_length": 3,
+            "format_examples": [
+                "716-4503 9094",
+                "716-45039094"
+            ],
+            "separator_allowed": true,
+            "min_confidence": 0.7,
+            "enabled": true,
+            "patterns": [
+                "716[-\\s]*(\\d{8})",
+                "716[-\\s]*(\\d{8})/([0-9A-Za-z]+)",
+                "716[-\\s]*(\\d{4}\\s?\\d{4}|\\d{8})"
+            ]
+        },
+        "UNKNOWN_0176": {
+            "airline": "UNKNOWN_0176",
+            "prefix": "176",
+            "length": 11,
+            "prefix_length": 3,
+            "format_examples": [
+                "176-4503 9094",
+                "176-45039094"
+            ],
+            "separator_allowed": true,
+            "min_confidence": 0.7,
+            "enabled": true,
+            "patterns": [
+                "176[-\\s]*(\\d{8})",
+                "176[-\\s]*(\\d{8})/([0-9A-Za-z]+)",
+                "176[-\\s]*(\\d{4}\\s?\\d{4}|\\d{8})"
+            ]
+        },
+        "UNKNOWN_0125": {
+            "airline": "UNKNOWN_0125",
+            "prefix": "125",
+            "length": 11,
+            "prefix_length": 3,
+            "format_examples": [
+                "125-4503 9094",
+                "125-45039094"
+            ],
+            "separator_allowed": true,
+            "min_confidence": 0.7,
+            "enabled": true,
+            "patterns": [
+                "125[-\\s]*(\\d{4}[\\s-]?\\d{4})",
+                "125(\\d{8})"
+            ]
+        },
+        "OZEL": {
+            "airline": "OZEL",
+            "prefix": [
+                "77",
+                "88"
+            ],
+            "length": 12,
+            "prefix_length": 2,
+            "format_examples": [
+                "772238490728",
+                "881234567890"
+            ],
+            "separator_allowed": true,
+            "min_confidence": 0.7,
+            "enabled": true,
+            "patterns": [
+                "(77\\d{10})",
+                "(88\\d{10})"
+            ]
+        },
+        "UPS": {
+            "airline": "UPS",
+            "prefix": "1Z",
+            "length": 18,
+            "prefix_length": 2,
+            "format_examples": [
+                "1Z2A28V06773006362"
+            ],
+            "separator_allowed": false,
+            "min_confidence": 0.7,
+            "enabled": true,
+            "patterns": [
+                "1Z[A-Z0-9]{16}"
+            ]
+        },
+        "UNKNOWN_080": {
+            "airline": "Bilinmeyen (080)",
+            "prefix": "080",
+            "length": 11,
+            "prefix_length": 3,
+            "format_examples": [
+                "080-37586743"
+            ],
+            "separator_allowed": true,
+            "min_confidence": 0.7,
+            "enabled": true,
+            "patterns": [
+                "080[-\\s]*(\\d{8})",
+                "080[-\\s]*(\\d{8})/([0-9A-Za-z]+)",
+                "080[-\\s]*(\\d{4}\\s?\\d{4}|\\d{8})"
+            ]
+        },
+        "UNKNOWN_714": {
+            "airline": "Bilinmeyen (714)",
+            "prefix": "714",
+            "length": 12,
+            "prefix_length": 3,
+            "format_examples": [
+                "714-313171308"
+            ],
+            "separator_allowed": true,
+            "min_confidence": 0.7,
+            "enabled": true,
+            "patterns": [
+                "714[-\\s]*(\\d{9})",
+                "714[-\\s]*(\\d{9})/([0-9A-Za-z]+)",
+                "714[-\\s]*(\\d{4}\\s?\\d{4}|\\d{9})"
+            ]
+        },
+        "UNKNOWN_618": {
+            "airline": "Bilinmeyen (618)",
+            "prefix": "618",
+            "length": 9,
+            "prefix_length": 3,
+            "format_examples": [
+                "618-40427306"
+            ],
+            "separator_allowed": true,
+            "min_confidence": 0.7,
+            "enabled": true,
+            "patterns": [
+                "618[-\\s]*(\\d{8})",
+                "618[-\\s]*(\\d{8})/([0-9A-Za-z]+)",
+                "618[-\\s]*(\\d{4}\\s?\\d{4}|\\d{8})"
+            ]
+        },
+        "UNKNOWN_11": {
+            "airline": "Bilinmeyen (11 Hane)",
+            "prefix": "",
+            "length": 11,
+            "prefix_length": 0,
+            "format_examples": [
+                "432115656218"
+            ],
+            "separator_allowed": false,
+            "min_confidence": 0.7,
+            "enabled": true,
+            "patterns": [
+                "^([0-9]{11})$"
+            ]
+        },
+        "UNKNOWN_25": {
+            "airline": "Bilinmeyen (25 ile başlar)",
+            "prefix": "25",
+            "length": 17,
+            "prefix_length": 2,
+            "format_examples": [
+                "25AT520000W6Q1KMK1",
+                "25BG004205032294M2"
+            ],
+            "separator_allowed": false,
+            "min_confidence": 0.7,
+            "enabled": true,
+            "patterns": [
+                "25[A-Z0-9]{15,16}"
+            ]
+        },
+        "UNKNOWN_057": {
+            "airline": "THY",
+            "prefix": "057",
+            "length": 11,
+            "prefix_length": 3,
+            "format_examples": [
+                "057-12345678"
+            ],
+            "separator_allowed": true,
+            "min_confidence": 0.7,
+            "enabled": true,
+            "patterns": [
+                "057[-\\s]*(\\d{8})",
+                "057[-\\s]*(\\d{8})/([0-9A-Za-z]+)",
+                "057[-\\s]*(\\d{4}\\s?\\d{4}|\\d{8})"
+            ]
+        }
+    }
+}

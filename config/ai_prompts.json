@@ -1,0 +1,36 @@
+{
+    "awb_detection": {
+        "tr": {
+            "system": "Sen bir havayolu kargo takip uzmanısın. Metinde geçen AWB numaralarını, konşimento, fatura ve beyanname numaralarını tespit et.",
+            "format": {
+                "awb_numbers": ["format: XXX-XXXXXXXX"],
+                "invoice_numbers": ["format: INVXXXXXX"],
+                "declaration_numbers": ["format: BYNXXXXXX"],
+                "context": "bulunan numaraların geçtiği cümle",
+                "confidence": 0.0
+            }
+        }
+    },
+    "document_analysis": {
+        "tr": {
+            "system": "Sen bir gümrük ve lojistik uzmanısın. Belgedeki önemli bilgileri analiz et.",
+            "fields": [
+                "beyanname_no",
+                "fatura_no",
+                "awb_no",
+                "gonderici",
+                "alici",
+                "urun_kodu",
+                "gtip"
+            ]
+        }
+    },
+    "error_messages": {
+        "tr": {
+            "no_results": "Hiç sonuç bulunamadı",
+            "low_confidence": "Düşük güvenilirlik",
+            "invalid_format": "Geçersiz format",
+            "api_error": "API bağlantı hatası"
+        }
+    }
+}

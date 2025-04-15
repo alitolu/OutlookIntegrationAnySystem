@@ -1,0 +1,102 @@
+{
+    "cache": {
+        "max_age_hours": 1,
+        "max_mails": 100,
+        "compress": true,
+        "path": "cache/mail_cache.json"
+    },
+    "outlook": {
+        "max_days": 15
+    },
+    "search": {
+        "batch_size": 100,
+        "use_threads": true
+    },
+    "datasource": {
+        "type": "excel",
+        "excel_file": "data/_main.xlsx",
+        "mssql": {
+            "server": "",
+            "database": "",
+            "username": "",
+            "password": "",
+            "table": "",
+            "search_column": ""
+        },
+        "column_mappings": {
+            "Dosya_No": {
+                "display_name": "Dosya_No",
+                "visible": true,
+                "searchable": false
+            },
+            "MarkaNo": {
+                "display_name": "MarkaNo",
+                "visible": true,
+                "searchable": true
+            },
+            "IsTakipAciklama": {
+                "display_name": "IsTakipAciklama",
+                "visible": true,
+                "searchable": false
+            },
+            "Referans": {
+                "display_name": "Referans",
+                "visible": false,
+                "searchable": true
+            }
+        },
+        "mail_search_fields": {
+            "subject": {
+                "display_name": "Konu",
+                "searchable": true
+            },
+            "body": {
+                "display_name": "İçerik",
+                "searchable": true
+            },
+            "sender": {
+                "display_name": "Gönderen",
+                "searchable": true
+            },
+            "attachments": {
+                "display_name": "Tarih",
+                "searchable": true
+            }
+        },
+        "search_column": "MarkaNo"
+    },
+    "ocr": {
+        "enabled": true,
+        "supported_formats": [
+            ".pdf",
+            ".png",
+            ".jpg",
+            ".jpeg",
+            ".tiff",
+            ".xml",
+            ".ubl",
+            ".doc",
+            ".docx"
+        ],
+        "languages": [
+            "tur",
+            "eng"
+        ],
+        "preprocess": {
+            "denoise": true,
+            "threshold": 128,
+            "contrast": 1.5,
+            "dpi": 300
+        },
+        "cache_results": true,
+        "cache_path": "cache/ocr_cache"
+    },
+    "grok": {
+        "enabled": false,
+        "api_key": "",
+        "confidence_threshold": 0.7,
+        "context_window": 100,
+        "cache_results": true,
+        "cache_ttl": 3600
+    }
+}
