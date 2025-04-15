@@ -1,4 +1,5 @@
-Referans Arama Uygulaması
+Eposta içeriğinde Referans Arama Uygulaması
+
 E-posta ve dokümanlarda Referans Numaralarını tespit ederek kullanmış olduğunuz ERP veya benzeri uygulamarınızda son durumlarını tespit eder.
 
 Proje Genel Bakış
@@ -12,36 +13,64 @@ Kontrolörler ve Modeller: Temel iş mantığı ve veri yapıları
 Yardımcı Araçlar: Tespit, analiz ve entegrasyon için özelleştirilmiş bileşenler
 
 Temel Özellikler
+
 ✉️ Outlook entegrasyonu ile e-posta tarama
+
 🔍 Yapılandırılabilir desen tespiti
+
 🧠 Yapay zeka destekli içerik analizi
+
 📊 Excel içe/dışa aktarma özellikleri
+
 📎 Ek dosya işleme
+
 💾 Arama sonuçlarını önbellekleme
 
+
 Bileşenler
+
 Kullanıcı Arayüzü Katmanı
+
 main_window.py: Ana uygulama arayüzü
+
 data_source_editor.py: E-posta kaynaklarını yapılandırma
+
 pattern_manager.py: Tespit desenlerini yönetme
+
 widgets.py: Yeniden kullanılabilir arayüz bileşenleri
+
 progress.py: Detaylı ilerleme raporlama
+
 Çekirdek
+
 search_controller.py: Arama işlemlerini koordine eder
+
 mail_model.py: E-posta veri gösterimi
+
 Yardımcı Araçlar
+
 _detector.py: Desen tanıma
+
 cache_manager.py: Arama sonuçları önbelleği
+
 config_manager.py: Uygulama ayarları
+
 excel_helper.py: Excel dosya işlemleri
+
 mail_analyzer.py: E-posta içerik analizi
+
 outlook_helper.py: Microsoft Outlook entegrasyonu
+
 ai_analyzer.py: Yapay zeka destekli içerik analizi
+
 attachment_processor.py: E-posta eklerini işleme
+
 Yapılandırma
+
 Uygulama yapılandırma için JSON dosyaları kullanır:
 
 settings.json: Uygulama ayarları
+
 _patterns.json: Yapılandırılabilir tespit desenleri
 
 
