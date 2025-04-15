@@ -1,4 +1,4 @@
-![image](https://github.com/user-attachments/assets/c5bb6a36-41e5-4c57-9e08-9fcb72072e76)Eposta içeriğinde Referans Arama Uygulaması
+Eposta içeriğinde Referans Arama Uygulaması
 
 E-posta ve dokümanlarda Referans Numaralarını tespit ederek kullanmış olduğunuz ERP veya benzeri uygulamarınızda son durumlarını tespit eder.
 
