@@ -1,4 +1,4 @@
-Eposta içeriğinde Referans Arama Uygulaması
+![image](https://github.com/user-attachments/assets/c5bb6a36-41e5-4c57-9e08-9fcb72072e76)Eposta içeriğinde Referans Arama Uygulaması
 
 E-posta ve dokümanlarda Referans Numaralarını tespit ederek kullanmış olduğunuz ERP veya benzeri uygulamarınızda son durumlarını tespit eder.
 
@@ -94,5 +94,5 @@ Outlook Bağlantı Hatası: Outlook'un açık olduğundan ve doğru profille otu
 OCR Hatası: Tesseract OCR'nin doğru kurulduğunu kontrol edin.
 Önbellek Sorunları: "cache/" klasörünü temizleyerek yeniden başlatın.
 
-Lisans
-MIT Lisansı
+![image](https://github.com/user-attachments/assets/1d2ca3d5-067e-4599-bca8-aaf3e2e09bb2)
+
